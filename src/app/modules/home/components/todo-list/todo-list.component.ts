@@ -22,9 +22,9 @@ export class TodoListComponent implements OnInit, DoCheck {
   }
 
   public setTask(event:string){
-
     this.taskList.push({task:event,checked:false})
   }
+
   public deleteById(index: number) {
     this.taskList.splice(index,1);
   }
