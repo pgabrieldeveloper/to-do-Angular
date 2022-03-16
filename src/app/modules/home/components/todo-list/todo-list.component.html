@@ -2,7 +2,7 @@
     <ul>
         <li *ngFor="let item of taskList; let i = index">
             <input type="checkbox" class="checkbox" [(ngModel)]="item.checked">
-            <input type="text" class="text" [(ngModel)]="item.task">
+            <input type="text" class="text" [(ngModel)]="item.task" [ngClass]="{'marcado':item.checked}">
             <button class="button" (click)="deleteById(i)">
                 <img src="assets/icons/icon-trash.svg" alt="icone-lixeira">
             </button>
