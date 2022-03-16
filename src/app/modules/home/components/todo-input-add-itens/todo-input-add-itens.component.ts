@@ -21,6 +21,7 @@ export class TodoInputAddItensComponent implements OnInit {
     this.task = this.task.trim();
     if(this.task){
       this.eventEmmitTask.emit(this.task);
+      this.task = "";
     }
   }
 
