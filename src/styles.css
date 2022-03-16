@@ -13,3 +13,7 @@ body{
     width: 350px;
     margin: 50px auto;
 }
+
+textarea:focus,Ïinput:focus, button{
+    outline: none;
+   }
